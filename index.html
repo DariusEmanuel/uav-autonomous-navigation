@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <a href="/1-Introduction.html" target="_blank" rel="noopener noreferrer">
+        Go to Documentation
+      </a>
+
+      <h1>GRAPH MAP</h1>
+      <div>
+        <div id="matrix"></div>
+        <fieldset>
+          <legend>Select a starting node:</legend>
+
+          <div>
+            <input type="radio" id="B" name="drone" value="1" />
+            <label for="B">Node 1</label>
+          </div>
+
+          <div>
+            <input type="radio" id="C" name="drone" value="2" />
+            <label for="C">Node 2</label>
+          </div>
+
+          <div>
+            <input type="radio" id="D" name="drone" value="3" />
+            <label for="D">Node 3</label>
+          </div>
+
+          <div>
+            <input type="radio" id="E" name="drone" value="4" />
+            <label for="E">Node 4</label>
+          </div>
+
+          <div>
+            <input type="radio" id="F" name="drone" value="5" />
+            <label for="F">Node 5</label>
+          </div>
+
+          <div>
+            <input type="radio" id="G" name="drone" value="6" />
+            <label for="G">Node 6</label>
+          </div>
+
+          <div>
+            <input type="radio" id="H" name="drone" value="7" />
+            <label for="H">Node 7</label>
+          </div>
+
+          <div>
+            <input type="radio" id="I" name="drone" value="8" />
+            <label for="I">Node 8</label>
+          </div>
+        </fieldset>
+      </div>
+      <!-- <div>
+        <label for="input1">node A</label>
+        <input type="number" id="input1" min="1" max="8" value="1" />
+
+        <label for="input2">node B</label>
+        <input type="number" id="input2" min="1" max="8" value="1" />
+
+        <button id="removeBtn">Remove route between node A and node B</button>
+      </div> -->
+    </div>
+    <div class="network-wrapper">
+      <div id="information"></div>
+      <div id="network"><h1>To start, select a node</h1></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
+<style>
+  body {
+    display: flex;
+  }
+  #app {
+    flex: 1;
+  }
+
+  .network-wrapper {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: black;
+  }
+  #network {
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #information {
+    height: 10vh;
+    font-size: 2rem;
+    text-align: center;
+    white-space: pre-wrap;
+  }
+
+  #network h1 {
+    flex: 1;
+  }
+
+  p,
+  label {
+    font: 1rem "Fira Sans", sans-serif;
+  }
+
+  input {
+    margin: 0.4rem;
+  }
+
+  fieldset {
+    text-align: center;
+    width: 200px;
+    background-color: rgb(161, 204, 249);
+  }
+  legend {
+    font-size: 1.2rem;
+  }
+
+  .htDimmed {
+    background-color: rgb(161, 204, 249) !important;
+  }
+</style>

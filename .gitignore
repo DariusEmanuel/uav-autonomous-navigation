@@ -1,0 +1,12 @@
+# Editor / OS files
+.DS_Store
+*.swp
+Thumbs.db
+
+# Node.js dependencies
+node_modules/
+
+# Built files / logs
+dist/
+build/
+*.log
